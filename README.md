@@ -37,7 +37,7 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/arianepcosta-unirv/TFC.git
-cd TFC
+cd TFC/src
 ```
 
 Instale as dependências PHP e JavaScript:
@@ -87,7 +87,15 @@ php vendor/bin/phpstan analyse
 
 ## Organização do repositório
 
-Além do código-fonte Laravel, o repositório contém materiais de documentação, diagramas e protótipos utilizados no desenvolvimento do Societra.
+```
+.
+├── docs/          # Documentação do projeto
+│   ├── Diagramas/ # Diagramas (casos de uso, sequência, classes, ER etc.)
+│   └── Prototipos/# Protótipos das telas
+└── src/           # Código-fonte da aplicação Laravel
+```
+
+Todos os comandos de instalação, testes e análise estática devem ser executados dentro da pasta `src/`.
 
 As atividades são acompanhadas por meio das issues do GitHub.
 
